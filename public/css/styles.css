@@ -1,0 +1,12 @@
+body {
+    background: #0c0c0b;
+    color: #232323;
+    line-height: 30px;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 25px 50px;
+    align-items: center;
+  }
+  h1,h3,p,ul,li{
+    color:red;
+  }
