@@ -45,6 +45,10 @@ The Express server application is designed to manage and display product details
 * Method: GET
 * Description: Get details of a specific user based on ID.
 
+### Products based on Category
+* Endpoint:/categorized-products
+* Description: Get a json with categorized product list.
+
 ### CORS Integration
 * CORS is implemented to allow secure communication between the server and client applications running on different domains.
 * This ensures a controlled access mechanism and enhances the overall security of the application.
@@ -65,6 +69,7 @@ This Express server application provides a robust foundation for managing and di
 * Get order with ID 2: `http://localhost:3000/get?id=2`
 * Get all users: `http://localhost:3000/user`
 * Get user with ID 3: `http://localhost:3000/user/3`
+* Get Products on category: `http://localhost:3000/categorized-products`
 
 ## Error Handling
 The server provides meaningful error responses to enhance the user experience.
