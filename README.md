@@ -6,8 +6,8 @@ The Express server application is designed to manage and display product details
 ## Setup
 * Clone the repository
 
-``git clone <repository-url>
-cd express-server-app``
+``git clone <repository-url>``
+``cd express-server-application``
 
 * Install Dependencies
 
@@ -23,27 +23,27 @@ cd express-server-app``
 `http://localhost:3000/`
 
 ### Product Details
-Endpoint: /cart
-Method: GET
-Description: Get a list of all products.
+* Endpoint: /cart
+* Method: GET
+* Description: Get a list of all products.
 
 ### Order Details
-Endpoint: /order
-Method: GET
-Description: Get a list of all orders.
+* Endpoint: /order
+* Method: GET
+* Description: Get a list of all orders.
 
-Endpoint: /get?id=
-Method: GET
-Description: Get details of a specific order based on ID.
+* Endpoint: /get?id=
+* Method: GET
+* Description: Get details of a specific order based on ID.
 
 ### User Details
-Endpoint: /user
-Method: GET
-Description: Get a list of all users.
+* Endpoint: /user
+* Method: GET
+* Description: Get a list of all users.
 
-Endpoint: /user/:id
-Method: GET
-Description: Get details of a specific user based on ID.
+* Endpoint: /user/:id
+* Method: GET
+* Description: Get details of a specific user based on ID.
 
 ### CORS Integration
 * CORS is implemented to allow secure communication between the server and client applications running on different domains.
