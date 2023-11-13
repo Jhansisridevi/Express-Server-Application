@@ -18,7 +18,7 @@
         <% item.products.forEach(product=> { %>
         <p>Product ID: <%= product.productId %> (<%= product.quantity %>)</p>
         <% }); %>
-        <p>Total: $<%= item.total %></p>
+        <p class="product-stock">Total: $<%= item.total %></p>
       </div>
       <% }); %>
     </div>
