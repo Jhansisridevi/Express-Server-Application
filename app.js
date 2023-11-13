@@ -5,6 +5,7 @@ const bodyParser = require('body-parser');
 const port = 3000;
 const cors = require('cors')
 const { logger } = require("./middleware/logEvents");
+const errorHandler = require('./middleware/errorHandler');
 
 const whitelist = ["https://localhost:3000"]; //"https://www.google.com" to verify CORS
 corsOptions = {
