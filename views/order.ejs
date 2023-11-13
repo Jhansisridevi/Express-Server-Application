@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Orders</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+  </head>
+
+  <body>
+    <h1>Order List</h1>
+
+    <div class="product-card" id="order-list">
+      <% order.forEach(item=> { %>
+      <div class="product">
+        <p>Order ID: <%= item.id %></p>
+        <p>User ID: <%= item.userId %></p>
+        <% item.products.forEach(product=> { %>
+        <p>Product ID: <%= product.productId %> (<%= product.quantity %>)</p>
+        <% }); %>
+        <p>Total: $<%= item.total %></p>
+      </div>
+      <% }); %>
+    </div>
+  </body>
+</html>
