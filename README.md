@@ -45,7 +45,10 @@ The Express server application is designed to manage and display product details
 * Method: GET
 * Description: Get details of a specific user based on ID.
 
-### Products based on Category
+### Logger Middleware 
+This example demonstrates a basic logger middleware that creates a log entry to a text file for each incoming request.
+
+### Categorize Middleware
 * Endpoint:/categorized-products
 * Description: Get a json with categorized product list.
 
