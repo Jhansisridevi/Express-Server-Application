@@ -5,14 +5,16 @@ const order = require("../data/orders-data");
 const user = require("../data/users-data");
 const path = require("path");
 
-router.get("^/$|/home(.html)?", (req, res) => {
+//route to view Home page
+router.get("^/$|/home(.html)?", (req, res) => { //Regex to validate
   res.sendFile(path.join(__dirname, "..", "views", "index.html"));
 });
-
-router.get("^\/cart$", (req, res) => {
+//route to view all products
+router.get("^\/cart$", (req, res) => { //Regex to validate
   res.render(path.join(__dirname, "..", "views", "cart.ejs"), { data });
 });
-router.get("^\/order$", (req, res) => {
+//route to view all orders
+router.get("^\/order$", (req, res) => { //Regex to validate
   res.render(path.join(__dirname, "..", "views", "order.ejs"), { order });
 });
 router.get("/order/:id", (req, res) => {
@@ -28,11 +30,12 @@ router.get("/order/:id", (req, res) => {
     res.status(404).send("Order does not exist")
 }
 });
-router.get("^\/user$", (req, res) => {
+//route to view all user 
+router.get("^\/user$", (req, res) => { //Regex to validate
   res.render(path.join(__dirname, "..", "views", "user.ejs"), { user });
 });
 router.get("/get", (req, res) => {
-  // Filter products based on the 'category' query parameter
+  // Filter products based on the 'id' query parameter
   const userid = req.query.id;
   const filteredUsers = user.filter((product) => product.id == userid);
  
