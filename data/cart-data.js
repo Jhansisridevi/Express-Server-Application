@@ -11,7 +11,7 @@ const products = [
             "name": "Product 2",
             "price": 29.99,
             "stock": 30,
-            "category": "clothing"
+            "category": "Clothing"
           },
           {
             "id": 3,
@@ -25,21 +25,21 @@ const products = [
             "name": "Product 4",
             "price": 49.99,
             "stock": 10,
-            "category": "books"
+            "category": "Books"
           },
           {
             "id": 5,
             "name": "Product 5",
             "price": 14.99,
             "stock": 75,
-            "category": "clothing"
+            "category": "Clothing"
           },
           {
             "id": 6,
             "name": "Product 1",
             "price": 19.99,
             "stock": 50,
-            "category": "Electronics"
+            "category": "Books"
           },
           {
             "id": 7,
@@ -67,7 +67,7 @@ const products = [
             "name": "Product 5",
             "price": 59.99,
             "stock": 40,
-            "category": "Electronics"
+            "category": "Books"
           },
           {
             "id": 11,
@@ -95,7 +95,7 @@ const products = [
             "name": "Product 9",
             "price": 99.99,
             "stock": 45,
-            "category": "Electronics"
+            "category": "Books"
           },
           {
             "id": 15,
